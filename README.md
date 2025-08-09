@@ -11,7 +11,7 @@ This project implements the Dead Block Replacement Policy and an improved versio
 - **Dirty vs Clean Block Eviction:** Dirty blocks include a writeback cost on eviction.
   - Mechanism: Add a dirty status bit along with a reuse score
 
-- **Eviction Strategy:** Blocks with low cost (clean + low reuse) are prioritized for eviction
+- **Eviction Strategy:** Blocks with low cost (clean + low reuse) are prioritized for eviction. 
 Eviction preference hierarchy:
   - DOA-tagged clean blocks
   - Non-recent clean blocks
@@ -20,7 +20,7 @@ Eviction preference hierarchy:
 Simulated on ChampSim with 200M warm up instructions and 1B simulation instruction.
 
 - **How To simulate:**
-  - Git Clone the (ChampSim repository)[https://github.com/ChampSim/ChampSim].
+  - Git Clone the [ChampSim repository](https://github.com/ChampSim/ChampSim).
   - Add the code in the replacement directory in ChampSim folder. (/replacement/deadblock/add_your_code_and_header)
   - Include the benchmarks and run the sbatch script.
 
